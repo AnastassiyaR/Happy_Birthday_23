@@ -46,4 +46,5 @@ html, body {
 
 .button:hover {
   background-color: #4a5d42; /* Optional: darker shade on hover */
+  transform: scale(1.05); /* Add a subtle scale effect on hover */
 }
