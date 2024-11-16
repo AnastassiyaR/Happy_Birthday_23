@@ -1,0 +1,9 @@
+.square {
+  width: 100px;         /* Width of the square /
+  height: 100px;        / Height of the square /
+  background-color: #761dc6; / Color of the square */
+  position: relative;
+  top: 150px;
+  background-image: url("https://i.giphy.com/c76IJLufpNwSULPk77.webp");
+  background-size: cover;
+}
