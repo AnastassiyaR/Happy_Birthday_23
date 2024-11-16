@@ -2,8 +2,8 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-import MainPage from './pages/MainPage.jsx';
-import RunningPage from './pages/RunningPage.jsx';
+import MainPage from './MainPage.jsx';
+import RunningPage from './RunningPage.jsx';
 
 // Create the root element for rendering
 const root = createRoot(document.getElementById('root'));

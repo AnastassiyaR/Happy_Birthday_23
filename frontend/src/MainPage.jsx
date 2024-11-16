@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import { motion } from 'framer-motion';
-import cats from "../assets/cats.jpg";
+import cats from "./assets/cats.jpg";
 import "./MainPage.css";
 
 function MainPage() {

@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './RunningPage.css';
 import { useNavigate } from "react-router-dom";
-import Square_running from "../components/Square_running.jsx";
-import ButtonRunning from "../components/Button_running.jsx";
+import Square_running from "./components/Square_running.jsx";
+import ButtonRunning from "./components/Button_running.jsx";
 
 function RunningPage() {
   const navigate = useNavigate();
