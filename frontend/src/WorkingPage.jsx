@@ -1,11 +1,11 @@
 import React from "react";
-import './SuprisePage.css'
+import './WorkingPage.css'
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import { motion } from 'framer-motion';
 import ButtonSuprise from "./components/button_suprise.jsx";
 
 
-function SuprisePage() {
+function WorkingPage() {
     const pageVariants = {
     initial: { opacity: 0 },
     in: { opacity: 1 },
@@ -13,7 +13,7 @@ function SuprisePage() {
   };
     const navigate = useNavigate();
     const new_page = () => {
-      return navigate('/working')
+      return navigate('/running')
   }
 
     return (
@@ -26,8 +26,8 @@ function SuprisePage() {
             >
                 <div className="suprise">
                     <div className="suprise_context">
-                        <div className="picture">
-                            <h1 className="suprise_text">Supriseeeeeeeeeeee</h1>
+                        <div className="picture_working">
+                            <h1 className="suprise_text">You worked a lot to achieve own goals<br/>Not gonna lie - sometimes I worried about you a lot</h1>
                         </div>
                     </div>
                     <div className="suprise_button_container">
@@ -38,4 +38,4 @@ function SuprisePage() {
         );
 };
 
-export default SuprisePage;
+export default WorkingPage;
