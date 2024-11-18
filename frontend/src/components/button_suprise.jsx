@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import './button_running.css';
+import './button_suprise.css';
 
 function ButtonRunning({ onClick }) {
   const [showButton, setShowButton] = useState(false);
@@ -16,7 +16,7 @@ function ButtonRunning({ onClick }) {
   };
 
   useEffect(() => {
-    const timer = setTimeout(appearButton, 9000); // Show button after 100 ms
+    const timer = setTimeout(appearButton, 2000); // Show button after 100 ms
     return () => clearTimeout(timer);
   }, []);
 
@@ -24,7 +24,7 @@ function ButtonRunning({ onClick }) {
     <div>
       {showButton && (
         <motion.button
-          className='buttonclick'
+          className='buttonclick_suprise'
           variants={buttonVariants}
           initial="hidden"
           animate="visible"
@@ -32,7 +32,7 @@ function ButtonRunning({ onClick }) {
           transition={{ duration: 0.5 }}
           onClick={onClick} // Call onClick prop when button is clicked
         >
-          Hello?
+          Continue ->
         </motion.button>
       )}
     </div>

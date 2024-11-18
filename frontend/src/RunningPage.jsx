@@ -9,7 +9,7 @@ function RunningPage() {
   const navigate = useNavigate();
 
   const NextPage = () => {
-    navigate('/'); // Navigate to the main page
+    navigate('/suprise'); // Navigate to the main page
   };
 
   const pageVariants = {
