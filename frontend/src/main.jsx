@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import { AnimatePresence } from 'framer-motion';
 import MainPage from './MainPage.jsx';
 import RunningPage from './RunningPage.jsx';
+import SuprisePage from './SuprisePage.jsx';
 
 // Create the root element for rendering
 const root = createRoot(document.getElementById('root'));
@@ -14,8 +15,10 @@ root.render(
     <Router>
       <AnimatePresence>
         <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="/running" element={<RunningPage />} />
+            <Route path="/" element={<MainPage />} />
+            <Route path="/" element={<MainPage />} />
+            <Route path="/running" element={<RunningPage />} />
+            <Route path="/suprise" element={<SuprisePage />} />
         </Routes>
       </AnimatePresence>
     </Router>

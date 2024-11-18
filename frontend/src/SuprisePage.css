@@ -1,0 +1,41 @@
+.suprise {
+  background-color: #3e97d3;
+  display: flex;
+  height: 100vh; /* Ensure it has a height */
+  flex-direction: column;
+}
+
+.suprise_context {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 10px;
+}
+
+
+.picture {
+  display: flex;
+  width: 1080px;
+  height: 600px;
+  background-image: url("./assets/we.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.suprise_text {
+  display: flex;
+  justify-content: left;
+  color: #df3232;
+  font-size: 40px;
+  margin-left: 50px;
+  font-family: Courier, monospace;
+}
+
+.suprise_button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
