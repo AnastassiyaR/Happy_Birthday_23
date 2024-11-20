@@ -2,12 +2,15 @@
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
+  "homepage": "anastassiyar.github.io",
   "type": "module",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.3.1",
