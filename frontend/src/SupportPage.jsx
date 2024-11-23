@@ -1,11 +1,11 @@
 import React from "react";
-import './WorkingPage.css'; // Импортируем стили
-import { useNavigate } from "react-router-dom"; // Для навигации между страницами
+import './SupportPage.css';
+import { useNavigate } from "react-router-dom"; // Импортируем useNavigate для навигации
 import { motion } from 'framer-motion';
 import ButtonSuprise from "./components/button_suprise.jsx";
-import weImage from './assets/study.png'; // Импортируем изображение
+import studyImage from './assets/help.png'; // Импортируем изображение
 
-function WorkingPage() {
+function SupportPage() {
     const pageVariants = {
         initial: { opacity: 0 },
         in: { opacity: 1 },
@@ -15,7 +15,7 @@ function WorkingPage() {
     const navigate = useNavigate();
 
     const new_page = () => {
-        return navigate('/worrying'); // Переход на страницу WorkingPage
+        navigate('/real'); // Переход на страницу RunningPage
     };
 
     return (
@@ -26,15 +26,14 @@ function WorkingPage() {
             variants={pageVariants}
             transition={{ duration: 0.9 }} // Длительность анимации
         >
-            <div className="working">
-                <div className="working_context">
-                    <div className="picture">
+            <div className="suprise">
+                <div className="suprise_context">
+                    <div className="picture_working">
                         {/* Используем <img> с импортированным изображением */}
-                        <img src={weImage} alt="Surprise" className="working-image" />
+                        <img src={studyImage} alt="Working" className="working-image" />
                     </div>
-                    <h1 className="working_text">
-                        You worked a lot to achieve your own goals.<br />
-                        Not gonna lie - sometimes I worried about you a lot.
+                    <h1 className="suprise_text">
+                    You are so careful, even if smth happened we always together, solve the problem as Team-Moon<br />
                     </h1>
                 </div>
                 <div className="suprise_button_container">
@@ -43,6 +42,6 @@ function WorkingPage() {
             </div>
         </motion.div>
     );
-};
+}
 
-export default WorkingPage;
+export default SupportPage;
