@@ -2,7 +2,7 @@
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://anastassiyar.github.io/happybirthday",
+  "homepage": "https://anastassiyar.github.io/happy_birthday_23",
   "type": "module",
   "scripts": {
     "dev": "vite",
