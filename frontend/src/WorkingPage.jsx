@@ -13,7 +13,7 @@ function WorkingPage() {
   };
     const navigate = useNavigate();
     const new_page = () => {
-      return navigate('/running')
+      return navigate('/worrying')
   }
 
     return (
