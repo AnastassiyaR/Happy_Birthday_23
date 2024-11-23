@@ -34,7 +34,7 @@ function MainPage() {
     >
       <div className="content">
         <img src={cats} className="cats" alt="Cats" onClick={handlePictureClick} />
-        <h1 className='text'>To Dummy</h1>
+        <h1 className='text'>To my little Dummy</h1>
         <button className="button" onClick={handleNextPage}>Continue</button>
       </div>
     </motion.div>

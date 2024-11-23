@@ -1,11 +1,11 @@
 import React from "react";
-import './WorkingPage.css'; // Импортируем стили
+import './ProudPage.css'; // Импортируем стили
 import { useNavigate } from "react-router-dom"; // Для навигации между страницами
 import { motion } from 'framer-motion';
 import ButtonSuprise from "./components/button_suprise.jsx";
-import weImage from './assets/study.png'; // Импортируем изображение
+import weImage from './assets/proud.png'; // Импортируем изображение
 
-function WorkingPage() {
+function WoryingPage() {
     const pageVariants = {
         initial: { opacity: 0 },
         in: { opacity: 1 },
@@ -15,7 +15,7 @@ function WorkingPage() {
     const navigate = useNavigate();
 
     const new_page = () => {
-        return navigate('/worrying'); // Переход на страницу WorkingPage
+        return navigate('/support'); // Переход на страницу WorkingPage
     };
 
     return (
@@ -26,15 +26,14 @@ function WorkingPage() {
             variants={pageVariants}
             transition={{ duration: 0.9 }} // Длительность анимации
         >
-            <div className="working">
-                <div className="working_context">
+            <div className="proud">
+                <div className="proud_context">
                     <div className="picture">
                         {/* Используем <img> с импортированным изображением */}
-                        <img src={weImage} alt="Surprise" className="working-image" />
+                        <img src={weImage} alt="Surprise" className="suprise-image" />
                     </div>
-                    <h1 className="working_text">
-                        You worked a lot to achieve your own goals.<br />
-                        Not gonna lie - sometimes I worried about you a lot.
+                    <h1 className="proud_text">
+                    You even cant imagine<br />how proud of you<br />my little Mousie
                     </h1>
                 </div>
                 <div className="suprise_button_container">
@@ -45,4 +44,4 @@ function WorkingPage() {
     );
 };
 
-export default WorkingPage;
+export default WoryingPage;

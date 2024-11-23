@@ -15,7 +15,7 @@ function SupportPage() {
     const navigate = useNavigate();
 
     const new_page = () => {
-        navigate('/running'); // Переход на страницу RunningPage
+        navigate('/real'); // Переход на страницу RunningPage
     };
 
     return (
@@ -33,7 +33,7 @@ function SupportPage() {
                         <img src={studyImage} alt="Working" className="working-image" />
                     </div>
                     <h1 className="suprise_text">
-                        AHHHHHHHHHHHHH.<br />
+                    You are so careful, even if smth happened we always together, solve the problem as Team-Moon<br />
                     </h1>
                 </div>
                 <div className="suprise_button_container">
